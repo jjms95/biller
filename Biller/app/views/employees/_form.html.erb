@@ -1,0 +1,13 @@
+<ul>
+	<li>
+		<%= form.label :name %>
+		<%= form.text_field :name %>		
+	</li>
+	<li>
+		<%= form.label :email %>
+		<%= form.text_field :email %>
+	</li>
+</ul>
+
+<p><%= form.submit "Save" %> 
+<%= link_to "Cancel",employees_path %></p>

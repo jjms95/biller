@@ -1,0 +1,22 @@
+
+
+<ul>
+	<li>
+		<%= form.label :name %>
+		<%= form.text_field :name %>		
+	</li>
+	<li>
+		<%= form.label :email %>
+		<%= form.text_field :email %>
+	</li>
+	<li>
+		<%= form.label :about %>
+		<%= form.text_field :about %>
+	</li>
+</ul>
+
+<% form.label :type %>
+<% form.text_field :type %>
+
+<p><%= form.submit "Save" %> 
+<%= link_to "Cancel",accounts_path %></p>

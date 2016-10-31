@@ -1,0 +1,5 @@
+cd /mnt/d/trabajo/ruby_5/proyectos/curso\ ruby\ 5/activeRecords/biller
+
+PS1="\u@\h: \W"\$" "
+
+Fuente: https://www.enmimaquinafunciona.com/pregunta/36201/es-posible-cambiar-mi-texto-rapida-ventana-de-terminal

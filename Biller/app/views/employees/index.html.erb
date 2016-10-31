@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+<h1>Employees</h1>
+
+<% @employees.each do |employee| %>
+	<ul>
+		<li><%= link_to employee.name, employee_path(employee) %></li>
+		<li><%= employee.type.to_s %></li>
+		<li><%= link_to "Delete", employee_path(employee), method: :delete, data: { confirm: 'Are you sure?' } %></li>			
+	</ul>
+<% end %>	
+
+<p><%= link_to "Create Employee", new_employee_path %></p>

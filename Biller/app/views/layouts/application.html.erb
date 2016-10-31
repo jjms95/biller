@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biller</title>
+        <%= csrf_meta_tags %>
+
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    </head>
+
+    <body>
+        <header>
+            <ul id="nav">
+                <li><%= link_to "Customers", accounts_path %></li>   
+                <li><%= link_to "Employees", employees_path %></li>
+                <li><%= link_to "Projects", proyects_path %></li>
+            </ul>
+        </header>
+        <div>
+            <% flash.each do |type,message| %>
+                <div class="alert flash <%= type %>">
+                    <%= message %>
+                </div>
+            <% end %>
+        </div>
+
+        <br></br>
+        <div class= "models">
+            <%= yield %>
+        </div>
+    </body>
+</html>
